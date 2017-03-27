@@ -1,0 +1,37 @@
+@import '_varaibles'
+
+.bread-crumbs
+  margin-bottom: 20px
+  
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+    align-items: flex-start
+    list-style-type: none
+    padding: 0
+    margin: 0
+    
+  &__item
+    &:after
+      content: ''
+      display: inline-block
+      width: 7px
+      height: 10px
+      margin: 0 5px
+      background-size: 7px 10px
+      background-position: 0 0
+      background-repeat: no-repeat
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDggMzU2Ij48cGF0aCBmaWxsPScjNjE2MTYxJyBzdHJva2U9JyM2MTYxNjEnIGQ9Ik0yMDQuMjkgMTg2LjQzQzEwNC40MyAyODYuMjkgNDguOTUgMzQxLjc2IDM3Ljg2IDM1Mi44NmMtMy41NyAzLjU3LTcuNCAzLjIxLTguMjIgMy41Ny0zLjA5IDAtNS44My0xLjE5LTguMjEtMy41N0wzLjU3IDMzNUMwIDMzMS40My4zNiAzMjcuNjEgMCAzMjYuNzljMC0zLjEgMS4xOS01Ljg0IDMuNTctOC4yMmwxNDAuMzYtMTQwLjM2QzU5LjcxIDk0IDEyLjkzIDQ3LjIxIDMuNTcgMzcuODYgMCAzNC4yOS4zNiAzMC40NiAwIDI5LjY0YzAtMy4wOSAxLjE5LTUuODMgMy41Ny04LjIxTDIxLjQzIDMuNTdDMjUgMCAyOC44Mi4zNiAyOS42NCAwYzMuMSAwIDUuODQgMS4xOSA4LjIyIDMuNTdDMTM3LjcxIDEwMy40MyAxOTMuMTkgMTU4LjkgMjA0LjI5IDE3MGMyLjM4IDIuMzggMy41NyA1LjEyIDMuNTcgOC4yMWwtMy41NyA4LjIyeiIvPjwvc3ZnPg==)
+    
+    &:nth-last-child(1)
+      &:after
+        display: none
+  
+  &__link--current
+    .bread-crumbs__link
+      color: $color-link-1
+      
+@media (max-width: 730px)
+  .bread-crumbs
+    margin-bottom: 40px

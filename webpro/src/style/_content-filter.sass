@@ -1,0 +1,29 @@
+@import '_varaibles'
+
+.content-filter
+  ul
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    list-style-type: none
+    padding: 0
+    margin: -5px 0
+    
+    li
+      padding: 5px 12.5px
+      
+      a
+        color: $color-61
+        font-weight: 400
+        text-decoration: none
+        transition: color $tr_time_min
+        
+        &:hover
+          color: $color-link-1
+          text-decoration: underline
+        
+      &.filter-active
+        a
+          color: $color-link-1
+          text-decoration: underline

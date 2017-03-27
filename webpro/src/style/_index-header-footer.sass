@@ -1,0 +1,137 @@
+@import '_varaibles'
+
+//header
+.index
+  .index-page-header
+    position: static
+    background: none
+    box-shadow: none
+    z-index: 1
+    
+    &:after
+      display: none
+    
+    &__email,
+    &__phone
+    
+      i
+       color: $color-main
+      
+  .header-nav
+    ul
+      li 
+        &.select
+          a
+            &:after
+              margin-top: 12px
+
+        a 
+          &:after
+            margin-top: 15px
+          
+          &:hover
+            &:after
+              margin-top: 12px
+          
+.mob-nav-wrapper
+  .index-page-header
+    &__phone,
+    &__email
+      i
+        color: #8bcf4d
+        
+//footer
+.index
+  .ip-foo
+    padding-top: 35px
+    background: none
+    
+    &__top-wrap
+      padding: 0
+      background: none
+      
+    &__top-cont
+      display: block
+      max-width: none
+      
+    &__onLoad
+      padding-left: 45px
+      
+    &__onload-text
+      color: #302d2d
+    
+    &__email,
+    &__phone
+      display: none
+      
+    &__bottom-wrap
+      max-width: none
+      padding: 15px 40px
+      
+    &__left
+      color: $color-main
+      
+    &__privacy
+      color: #302d2d
+      text-decoration: underline
+
+      &:hover
+        color: #302d2d
+        text-decoration: none
+        
+@media (min-width: 1101px) and (max-width: 1140px)
+  .index
+    .ip-foo
+      &__bitrix-1c-btn
+        margin-right: 40px
+        
+@media (min-width: 1040px) and (max-width: 1100px)
+  .index
+    .ip-foo
+      &__separetor,
+      &__privacy
+        display: inline
+        
+@media (min-width: 851px) and (max-width: 925px)
+  .index
+    .ip-foo
+      &__right-2-img-wrap
+        display: flex
+
+      &__bitrix-1c-btn
+        height: 30px
+        line-height: 30px
+
+        &:nth-child(1)
+          margin-bottom: 0
+
+        img
+          display: inline
+          height: auto
+
+      &__gold-partner
+        display: inline
+        height: auto
+        
+@media (max-width: 700px)
+  .index
+    .ip-foo
+      &__top-cont
+        display: flex
+        align-items: center
+        
+      &__onLoad
+        padding-left: 0
+ 
+@media (max-width: 700px)
+  .index 
+    .ip-foo
+      &__bottom-wrap
+        padding-left: 10px
+        padding-right: 10px
+        
+      
+        
+        
+        
+    

@@ -1,0 +1,72 @@
+@import '_varaibles'
+
+.users-type
+  padding-bottom: 65px
+  background: #ececec
+  
+  &__types
+    max-width: 830px
+    margin: auto
+  
+  &__list
+    padding: 0
+    margin: 0
+    list-style-type: none
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    
+  &__item
+    flex-shrink: 0
+    width: 230px
+    margin-right: 70px
+    text-align: center
+    
+    &:last-child
+      margin-right: 0
+    
+  &__item-title
+    margin-bottom: 10px
+    color: $color-2c
+    font-weight: 300
+    font-size: 26px
+    
+  &__item-body
+    color: #a3a3a3
+    line-height: 24px
+    
+  .case__subtitle
+    max-width: 570px
+    margin-bottom: 35px
+    
+@media (max-width: 930px)
+  .users-type
+    &__list
+      justify-content: space-between
+      
+    &__item
+      margin-right: 0
+      
+@media (max-width: 775px)
+  .users-type
+    padding-bottom: 50px
+    
+    &__list
+      display: block
+      width: 230px
+      margin: 0 auto
+      
+    &__item
+      margin-bottom: 35px
+      
+      &:last-child
+        margin-bottom: 0
+      
+    &__item-title
+      font-size: 18px
+    
+    
+      
+  
+      
+      

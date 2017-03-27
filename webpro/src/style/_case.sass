@@ -1,0 +1,246 @@
+@import '_varaibles'
+
+.case
+  width: 100%
+  
+  &__title
+    text-align: center
+    padding-top: 65px
+    margin-bottom: 25px
+    
+  &__title-text
+    font-weight: 300
+    margin: 0
+    
+  &__subtitle
+    max-width: 530px
+    margin: 0 auto 65px
+    text-align: center
+    color: #a3a3a3
+    font-weight: 300
+    font-size: 18px
+    line-height: 24px
+    
+@media (max-width: 1000px)
+  .case
+    &__title
+      padding-top: 45px
+      margin-bottom: 20px
+      
+    &__subtitle
+      margin-bottom: 25px
+      font-size: 14px
+      left: 22px
+
+.case-container
+  max-width: 1200px
+  padding: 0 15px
+  margin: auto
+    
+@media (max-width: 1230px)
+  .case-container
+    padding: 0 30px
+    
+.ios-window
+  border: 1px solid #d8d8d8
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.1)
+  
+  &__header
+    height: 16px
+    border-bottom: 1px solid #c1c0c1
+    background: linear-gradient(to top, #e2e1e2, #eeedee)
+    
+  &__header-btns
+    display: flex
+    height: 100%
+    align-items: center
+    margin-left: 5px
+    
+  &__header-btn
+    display: block
+    width: 5px
+    height: 5px
+    margin-right: 4px
+    border-radius: 50%
+    
+    &:nth-child(1)
+      background: #ff6c81
+    
+    &:nth-child(2)
+      background: #fecf24
+    
+    &:nth-child(3)
+      background: #21d44b
+  
+  &__body
+    background: #fff
+    
+  &__img
+    display: block
+    width: 100%
+    height: auto
+    
+//items
+.case
+  &--personal-travel
+    .case-intro
+      background-image: url(../img/case/personal-travel/intro.jpg)
+      
+      &__title
+        max-width: 270px
+      
+    .search-from,
+    .sales-statistics,
+    .designe
+      background: linear-gradient(to left, #2976b7, #389cf0)
+    
+  &--craft-cafe
+    .case-intro
+      background-image: url(../img/case/craft-cafe/intro.jpg)
+      
+    .designe
+      background: linear-gradient(to left, #f7b263, #ed9837)
+      
+  &--lira-cloud
+    .case-intro
+      background-image: url(../img/case/lira-cloud/intro.jpg)
+      
+  &--poll-worker
+    .case-intro
+      background-image: url(../img/case/poll-worker/intro.jpg)
+      
+    .index-page,
+    .case-footer
+      background: #e9e9e9
+      
+  &--rbanking
+    .case-intro
+      background-image: url(../img/case/rbanking/intro.jpg)
+      
+  &--avtomax
+    .case-intro
+      background-image: url(../img/case/avtomax/intro.jpg)
+      
+  &--aggregator
+    .case-intro
+      background-image: url(../img/case/aggregator/intro.png)
+    
+    .search-from,
+    .designe
+      background: linear-gradient(to left, #2976b7, #389cf0)
+      
+    .preview
+      .case__subtitle
+        margin-bottom: 45px
+        
+      &__body
+        text-align: center
+        
+  &--eao
+    .case-intro
+      background-image: url(../img/case/eao/intro.png)
+      
+    .special-features
+      background: linear-gradient(to left, #10a681, #0e9877)
+      
+  &--zhitnyaya
+    .case-intro
+      background-image: url(../img/case/zhitnyaya/intro.png)
+      background-position: 0 0
+      
+  &--liskar
+    .case-intro
+      background-image: url(../img/case/liskar/intro.jpg)
+      
+  &--memorial
+    .case-intro
+      background-image: url(../img/case/memorial/intro.png)
+      background-position: 0 0
+      
+  &--flower-paradise
+    .case-intro
+      background-image: url(../img/case/flower-paradise/intro.jpg)
+      background-position: 0 0
+      
+  &--expert
+    .case-intro
+      background-image: url(../img/case/expert/intro.jpg)
+      background-position: 0 0
+      
+  &--dream-start
+    .case-intro
+      background-image: url(../img/case/dream-start/intro.png)
+      
+    .designe
+      background: linear-gradient(to left, #1ca452, #35c16c)
+      
+    .index-page
+      background: #ececec
+      
+  &--uzti
+    .case-intro
+      background-image: url(../img/case/uzti/intro.png)
+      
+    .designe--ab-testing
+      background: linear-gradient(to left, #ebaf58, #da8132)
+      
+  &--maximus
+    .case-intro
+      background-image: url(../img/case/maximus/intro.png)
+      background-position: 0 0
+      
+    .case__subtitle
+      margin-bottom: 40px
+      
+    .index-page
+      background: #ececec
+      
+    .designe,
+    .service-integration--autopost
+      background: linear-gradient(to left, #0082d5, #006aae)
+      
+    .designe__info
+      max-width: 540px
+      
+  &--habarchik
+    .case-intro
+      background-image: url(../img/case/habarchik/intro.jpg)
+      background-position: 0 0
+      
+    .index-page        
+      &__mac-window-img
+        height: 100%
+        
+  &--rosttur
+    .case-intro
+      background-image: url(../img/case/rosttur/intro.png)
+      
+    .ios-window-block
+      padding-bottom: 0
+      
+    .case-footer
+      background: #ececec
+      
+  &--jew
+    .case-intro
+      background-image: url(../img/case/jew/intro.jpg)
+      
+      &__title
+        max-width: 370px
+      
+    .two-window
+      padding: 65px 0 35px
+      
+      &__img
+        display: block
+        margin: 20px auto 0
+      
+      .case__subtitle
+        max-width: 570px
+        margin-bottom: 35px
+      
+    .designe
+      background: linear-gradient(to left, #ffbf5f, #df9838)
+    
+      
+      

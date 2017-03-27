@@ -1,0 +1,59 @@
+@import '_varaibles'
+
+.case-footer
+  padding: 60px 0 80px
+  background: #fff
+  text-align: center
+  
+  &__title
+    margin-bottom: 20px
+    color: $color-2c
+    font-weight: 300
+    font-size: 30px
+    letter-spacing: -0.01em
+    
+  &__text
+    max-width: 615px
+    margin: auto
+    color: #a3a3a3
+    font-weight: 300
+    font-size: 16px
+    line-height: 24px
+    
+  &__site
+    margin-bottom: 50px
+    font-size: 18px
+    
+    .link
+      border-bottom: 1px solid #30a5d6
+      text-decoration: none
+      
+      &:hover
+        border-bottom-color: transparent
+    
+  &__pic
+    display: inline-block
+    
+    img
+      display: block
+      max-width: 100%
+      height: auto
+      margin: auto
+    
+@media (max-width: 1030px)
+  .case-footer
+    &__text
+      font-size: 14px
+      
+@media (max-width: 600px)
+  .case-footer
+    padding: 50px 0
+    
+    &__site
+      margin-bottom: 40px
+      
+
+.case-footer
+  &--solo-img
+    padding: 70px 0
+  

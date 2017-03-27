@@ -1,0 +1,69 @@
+@import '_varaibles'
+
+.case-info
+  padding: 45px 0 70px
+  background: #fff
+  
+  &__body
+    display: flex
+    
+  &__description,
+  &__client
+    width: 50%
+    
+  &__client
+    padding: 0 15px
+    
+  &__title
+    margin-bottom: 20px
+    color: $color-2c
+    font-weight: 300
+    font-size: 40px
+    
+  &__text
+    max-width: 470px
+    color: #a3a3a3
+    font-size: 16px
+    line-height: 24px
+    
+  &__company,
+  &__company-type,
+  &__site,
+  &__year
+    display: block
+    
+  &__company,
+  &__year
+    color: $color-2c
+    
+@media (max-width: 950px)
+  .case-info
+    &__body
+      display: block
+      
+    &__description,
+    &__client
+      width: auto
+      
+    &__description
+      margin-bottom: 45px
+      
+    &__client
+      padding: 0
+      
+    &__text
+      max-width: none
+      
+@media (max-width: 600px)
+  .case-info
+    padding: 40px 0 50px
+    
+    &__description
+      margin-bottom: 37px
+    
+    &__title
+      margin-bottom: 17px
+      font-size: 24px
+      
+    &__text
+      font-size: 14px

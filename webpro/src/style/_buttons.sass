@@ -1,0 +1,119 @@
+@import '_varaibles'
+
+.btn
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  border-radius: 2px
+  font-size: 16px
+  font-weight: 500
+  text-decoration: none
+  line-height: 0
+  transition: color $tr_time_min, background $tr_time_min, border-color $tr_time_min
+  outline: 0
+  
+  &:hover
+    text-decoration: none
+    outline: 0
+  
+  &:active
+    box-shadow: none
+    outline: 0
+  
+    &:focus
+      outline: 0
+  
+  &:focus
+    outline: 0
+  
+  &--type-1
+    background: none
+    border: 2px solid $color-a6
+    color: $color-a6
+    
+    &:hover
+      border-color: $color-green-1
+      background: $color-green-1
+      color: #fff
+    
+    &:active
+      border-color: $color-green-2
+      background: $color-green-2
+      color: #fff
+    
+  &--type-2
+    background: $color-green-1
+    color: #fff
+    
+    &:hover
+      background: #a2de6b
+      color: #fff
+    
+    &:active
+      background: $color-green-2
+      color: #fff
+    
+  &--type-3
+    background: none
+    border: 2px solid $color-a6
+    color: $color-a6
+    
+    &:hover
+      border-color: $color-green-1
+      color: $color-green-1
+    
+    &:active
+      border-color: $color-green-2
+      color: $color-green-2
+    
+  &--size-xl
+    width: 280px
+    height: 60px
+    
+  &--size-l
+    width: 220px
+    height: 50px
+    
+  &--size-m
+    width: 150px
+    height: 35px
+    
+  &--size-s
+    width: 120px
+    height: 35px
+    font-size: 14px
+    
+    
+
+    
+.btn-date
+  display: block
+  width: 135px
+  height: 40px
+  background: #c4c4c4
+  box-shadow: 0 8px 8px rgba(0,0,0,.15)
+  line-height: 40px
+  text-align: center
+  color: #fff
+  font-size: 14px
+  text-decoration: none
+  transition: background $tr_time_min, color $tr_time_min
+  outline: none
+    
+  &:hover
+    color: #fff
+    background: $color-green-1
+    text-decoration: none
+    outline: 0
+    
+  .fa
+    margin-right: 5px
+  
+  &:active
+    background: $color-green-2
+    outline: 0
+  
+    &:focus
+      outline: 0
+    

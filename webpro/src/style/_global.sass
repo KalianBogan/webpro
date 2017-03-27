@@ -1,0 +1,90 @@
+@import '_varaibles.sass'
+
+//прижатый подвал
+body
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  margin: 0
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400
+  display: block\9; /* IE 8*/
+  *display: block; /* IE 7*/
+  _display: block; /* IE 6 */
+    
+@media all and (-ms-high-contrast:none)
+  body
+    display: block /* IE10 */
+  
+  *::-ms-backdrop, body
+    display: block /* IE11 */
+
+main
+  flex: 1
+  // контент по центру main
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  
+  background: #f8f9fb
+  
+@media (max-width: 600px)
+  main
+    background: #fff
+    
+  
+//отступы контент контейнера
+.content-indent
+  width: 100%
+  padding-top: 60px
+  padding-bottom: 60px
+  
+@media (max-width: 768px)
+  .content-indent
+    padding-top: 40px
+    padding-bottom: 40px
+
+//переделать под общий [прижатый подвал]
+.text-page-body
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  margin: 0
+
+.text-page-body
+  .text-page
+    flex: 1
+    
+//h1-h6
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  color: $color-2c
+  
+h2,
+h4,
+h5,
+h6
+  font-weight: 500
+  
+h1
+  font-weight: 700
+  font-size: 60px
+  
+h2
+  font-size: 36px
+  
+h3
+  font-size: 30px
+  
+h4
+  font-size: 24px
+  
+h5
+  font-size: 18px
+  
+h6
+  font-size: 16px

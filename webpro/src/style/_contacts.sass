@@ -1,0 +1,239 @@
+@import '_varaibles'
+
+.contacts
+  &__body
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    
+  &__left,
+  &__right
+    width: 50%
+    padding: 0 15px
+    
+  &__left
+    padding-left: 25px
+    
+  &__contacts
+    margin-bottom: 45px
+    
+  &__contacts-list
+    padding: 0
+    margin: 0
+    list-style-type: none
+    
+  &__contacts-item
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    margin-bottom: 17px
+    
+  &__contacts-icon
+    width: 50px
+    color: $color-green-1
+    font-size: 30px
+    
+    &--skype
+      margin-top: -5px
+      
+    &--email
+      padding-left: 5px
+      margin-top: -8px
+      font-size: 25px
+      
+    &--phone
+      padding-left: 5px
+      margin-top: -5px
+    
+  &__contacts-text
+    color: $color-61
+    font-size: 18px
+    
+  &__contacts-text-row
+    display: block
+    line-height: 26px
+    
+  &__requisites
+    th
+      padding-bottom: 15px
+      color: $color-61
+      font-weight: 500
+      font-size: 18px
+      
+    td
+      color: $color-61
+      font-size: 16px
+      line-height: 24px
+    
+  &__requisites-item-title
+    padding-right: 20px
+    
+  &__right
+    padding-right: 0
+    
+  &__form
+    padding: 35px 40px 40px
+    border-radius: 4px
+    box-shadow: 0 2px 9px 0 rgba(#000, .29)
+    
+  &__form-title
+    margin-bottom: 15px
+    text-align: center
+    color: #616161
+    font-size: 24px
+    
+  &__form-dbl-input
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-bottom: 5px
+    
+    .form-default__input-wrp
+      margin-top: 0
+      
+      &:first-child
+        margin-right: 30px
+      
+  &__form-foo-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 22px
+    
+  label[for=loadFile]
+    border-bottom: 1px solid #6d7575
+    color: #989898
+    font-size: 14px
+    cursor: pointer
+    text-align: left
+    
+    &:hover
+      border-color: transparent
+    
+    i
+      margin-right: 5px
+    
+  #loadFile
+    display: none
+    
+  .fileName
+    display: none
+    max-width: 235px
+    overflow: hidden
+    
+    i
+      color: #95db55
+      
+  &__select
+    width: 50%
+    height: 37px
+    padding: 0 20px
+    margin-left: 15px
+    border-color: #6d7575 !important
+    box-shadow: none !important
+    border-radius: 0
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA0IDUnPjxwYXRoIGZpbGw9JyM1MTUxNTEnIGQ9J00yIDBMMCAyaDR6bTAgNUwwIDNoNHonLz48L3N2Zz4=)
+    background-color: transparent
+    background-size: 10px 14px
+    background-repeat: no-repeat
+    background-position: 95% center
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    outline: none !important
+    color: #989898
+    line-height: 35px
+    
+  input[type=submit]
+    width: 200px
+    padding-top: 0
+    padding-bottom: 0
+    margin-top: 30px
+    margin-left: 0
+    height: 40px
+    border-radius: 0
+    border-width: 2px
+    font-size: 16px
+    line-height: 36px
+    font-weight: 600
+    text-transform: uppercase
+      
+  .page-title    
+    &:after
+      width: 30px
+    
+@media (max-width: 1230px)
+  .contacts
+    &__body
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+      
+    &__left
+      display: flex
+      justify-content: flex-start
+      align-items: flex-start
+      width: 100%
+      margin-bottom: 30px
+      
+    &__contacts
+      display: flex
+      justify-content: center
+      align-items: flex-start
+      width: 50%
+      
+    &__requisites-item-title
+      flex-shrink: 0
+      
+    &__right
+      width: 100%
+      max-width: 570px
+      padding: 0
+      
+@media (max-width: 750px)
+  .contacts
+    &__left
+      display: block
+      
+    &__contacts,
+    &__requisites
+      max-width: 570px
+      margin-left: auto
+      margin-right: auto
+      
+    &__contacts
+      display: block
+      width: auto
+      
+@media (max-width: 600px)
+  .contacts
+    &__form
+      padding-left: 25px
+      padding-right: 25px
+      padding-bottom: 0
+      margin: 0 -30px
+      border-top: 1px solid #6d7575
+      border-radius: 0
+      box-shadow: none
+      
+    &__form-dbl-input
+      display: block
+      
+      .contacts__input-wrp:first-child
+        margin-bottom: 10px
+        
+@media (max-width: 500px)
+  .contacts
+    &__form
+      padding-bottom: 40px
+      
+    &__form-foo-block
+      display: block
+      padding: 25px 0 0
+      
+    &__select
+      width: 250px
+      margin: 24px auto
+      
+    input[type=submit]
+      margin: 0

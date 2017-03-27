@@ -1,0 +1,59 @@
+.sales-statistics
+  padding: 70px 0
+  
+  &__info
+    color: #fff
+    text-align: center
+    
+  .ios-window
+    max-width: 550px
+    
+  .case__title
+    padding-top: 0
+    
+  .case__title-text
+    color: #fff
+    line-height: 24px
+    
+@media (min-width: 1050px)
+  .sales-statistics
+    &__body
+      display: flex
+      justify-content: flex-start
+      align-items: center
+  
+    &__preview,
+    &__info
+      width: 50%
+      
+    &__preview
+      order: 1
+      flex-shrink: 0
+      
+    &__info
+      order: 2
+      flex-shrink: 0
+      padding-left: 15px
+      text-align: left
+      
+    .case__title
+      text-align: left
+      
+@media (max-width: 1049px)
+  .sales-statistics
+    padding: 50px 0
+    
+    &__info
+      max-width: 575px
+      margin: auto
+      margin-bottom: 35px
+      
+    .ios-window
+      margin: auto
+      
+@media (max-width: 600px)
+  .sales-statistics
+    &__info
+      margin-bottom: 25px
+    
+      

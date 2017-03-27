@@ -1,0 +1,107 @@
+.p404
+  display: flex
+  justify-content: space-around
+  align-items: center
+  width: 100%
+  max-width: 1200px
+  margin-left: auto
+  margin-right: auto
+  
+  &__info
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    padding-right: 0
+    text-align: center
+    margin-left: 54px
+    
+  &__title
+    color: $color_grn
+    font-weight: 700
+    line-height: 35px
+    
+  &__code
+    font-size: 60px
+    
+  &__status
+    font-size: 36px
+    
+  &__subtitle
+    position: relative
+    margin-bottom: 30px
+    margin-top: 12px
+    color: $color-61
+    font-size: 30px
+    line-height: 22px
+
+    &:after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 50%
+      width: 170px
+      height: 2px
+      margin-bottom: -33px
+      margin-left: -85px
+      background: $color_grn
+  
+  &__disc
+    max-width: 415px
+    padding-top: 25px
+    color: $color-61
+    font-weight: 400
+    font-size: 14px
+    line-height: 22px
+    text-align: center
+      
+  &__form
+    width: 350px
+    padding: 35px 45px 38px 50px
+    border-radius: 4px
+    background: #fff
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.29)
+    box-sizing: content-box
+    
+  &__form-title,
+  &__form-subtitle
+    text-align: center
+    color: $color-2c
+    
+  &__form-title
+    font-size: 18px
+    font-weight: 500
+    text-transform: uppercase
+    margin-bottom: 5px
+    
+  &__form-subtitle
+    font-weight: 400
+    margin-bottom: 10px
+    line-height: 22px
+    
+@media (max-width: 1100px)
+  .p404
+    &__info
+      margin-left: 0
+      margin-right: -40px
+      
+@media (max-width: 930px)
+  .p404
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    
+    &__info
+      margin-right: 0px
+      margin-bottom: 30px
+      
+@media (max-width: 540px)
+  .p404
+    &__form
+      width: 100%
+      margin-bottom: -40px
+      box-sizing: border-box
+      
+    &__disc
+      padding-left: 15px
+      padding-right: 15px

@@ -1,0 +1,332 @@
+@import '_varaibles'
+
+.index-page-header
+  position: relative
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  min-height: 80px
+  padding: 0 40px 0 45px
+  background: #ffffff
+  z-index: 2
+  
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    top: 80px
+    margin-top: -14px
+    left: 0
+    width: 100%
+    height: 14px
+    box-shadow: 0 14px 26px 0 rgba(0,0,0,.15)
+    z-index: 1
+  
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    background: #fff
+    width: 100%
+    height: 100%
+    z-index: 2
+  
+  &__right-wrapper,
+  .header-logo,
+  .header-nav,
+  .mob-nav-btn
+    position: relative
+    z-index: 3
+    
+  &__right-wrapper
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    flex-shrink: 0
+    margin-left: 10px
+    
+  &__email,
+  &__phone
+    margin-right: 45px
+    color: $color-main
+    font-size: 16px
+    
+    i
+      margin-right: 10px
+      color: #8bcf4d
+      font-size: 18px
+      
+  &__language
+    a
+      float: left
+      width: 24px
+      height: 16px
+      margin-left: 11px
+      border: 1px solid $color_border
+      cursor: pointer
+      box-sizing: content-box
+      background: url(../img/sprite/flag_sprt.jpg)
+    
+      &:hover
+        border: 1px solid $color_grn
+      
+      &.select
+        border: 1px solid $color_grn
+    
+      &:nth-child(1)
+        margin-left: 0
+        background-position: -24px 0
+
+      &:nth-child(2)
+        background-position: 0 0
+
+      &:nth-child(3)
+        background-position: -48px 0
+  
+.header-logo
+  flex-shrink: 0
+  
+.mob-nav-btn
+  position: relative
+  display: none
+  padding: 5px
+  color: $color-main
+  font-size: 25px
+  text-decoration: none
+    
+  &:hover
+    color: $color-main
+    text-decoration: none
+  
+.header-nav
+  width: 100%
+    
+  ul
+    display: flex
+    padding: 0
+    padding-left: 40px
+    margin: 0
+      
+    li
+      display: inline-block
+      padding: 0 25px
+      white-space: nowrap
+          
+      &.select
+        a
+          &:after
+            height: 3px
+            margin-top: 24px
+        
+      a
+        position: relative
+        padding: 5px 0
+        color: $color-main
+        font-weight: 500
+        font-size: 14px
+        letter-spacing: 0.075em
+        text-transform: uppercase
+        text-decoration: none
+          
+        &:after
+          content: ''
+          position: absolute
+          top: 100%
+          left: 0
+          width: 100%
+          height: 0px
+          margin-top: 27px
+          background: #8bcf4d
+          transition: all 0.3s ease 0s
+          
+        &:hover
+          color: $color-main
+          text-decoration: none
+          
+          &:after
+            height: 3px
+            margin-top: 24px
+  
+.mob-nav-wrapper
+  display: none
+  position: absolute
+  top: 0
+  right: 0
+  width: 300px
+  height: 100%
+  margin-right: -300px
+  background: #2f3530
+  z-index: 20
+  transition: margin-right 0.4s
+  
+  .mob-nav-btn-2
+    position: absolute
+    top: 18px
+    right: 40px
+    padding: 5px
+    color: #fff
+    font-size: 25px
+    text-decoration: none
+  
+  .header-nav
+    ul
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: flex-start
+      padding: 40px 0 0 45px
+      
+      li
+        display: block
+        padding: 0 0 40px 0
+          
+        &.select
+          a
+            &:after
+              margin-top: 12px
+
+        a 
+          color: #fff
+          
+          &:after
+            margin-top: 15px
+          
+          &:hover
+            color: #fff
+          
+            &:after
+              margin-top: 12px
+    
+  .index-page-header
+    &__right-wrapper
+      position: absolute
+      bottom: 0
+      flex-direction: column
+      justify-content: flex-start
+      align-items: flex-start
+      width: 100%
+      margin-left: 0
+      
+    &__phone,
+    &__email
+      display: block
+      width: 300px
+      padding-left: 45px
+      padding-bottom: 17px
+      margin-right: 0
+      color: #fff
+    
+      i
+        color: #8bcf4d
+        margin-right: 8px
+      
+    &__language
+      display: block
+      width: 100%
+      height: 68px
+      padding-left: 45px
+      padding-top: 24px
+      margin-top: 5px
+      border-top: 1px solid #636864
+      
+      a
+        border-color: #2f3530
+        
+  
+  
+@media (min-width: 1391px) and (max-width: 1560px)
+  .header-nav
+    ul
+      display: flex
+      justify-content: space-around
+      
+      li
+        padding: 0
+  
+@media (min-width: 1471px) and (max-width: 1560px)
+  .index-page-header
+    &__email,
+    &__phone
+      margin-right: 36px
+    
+@media (max-width: 1470px)
+  .index-page-header
+    &__email,
+    &__phone
+      margin-right: 28px
+  
+@media (max-width: 1390px)
+  .index-page-header
+    
+    &__right-wrapper
+      margin-left: 0
+      
+    &__language
+      display: none
+        
+  .header-nav 
+    ul
+      padding-left: 30px
+      
+      li
+        padding: 0 14px
+        
+  .mob-nav-btn
+    display: block
+
+@media (max-width: 1325px)
+  .index-page-header
+    padding-right: 30px
+    
+  .index-page-header__email
+    display: none
+    
+  .mob-nav-wrapper 
+    .mob-nav-btn-2
+      right: 30px
+    
+@media (max-width: 1135px)
+  .header-nav
+    ul
+      .header-nav__jobs
+        display: none
+          
+@media (max-width: 1025px)
+  .header-nav
+    ul
+      .header-nav__contacts
+        display: none
+          
+@media (max-width: 920px)
+  .header-nav
+    ul
+      .header-nav__blog
+        display: none
+          
+@media (max-width: 850px)
+  .header-nav
+    ul
+      .header-nav__about
+        display: none
+          
+@media (max-width: 720px)
+  .index-page-header__phone
+    display: none
+    
+@media (max-width: 550px)
+  .header-nav
+    ul
+      .header-nav__portfolio,
+      .header-nav__services
+        display: none
+        
+@media (max-width: 768px)
+  .index-page-header
+    box-shadow: none
+    position: relative

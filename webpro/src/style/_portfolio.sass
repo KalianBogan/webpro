@@ -1,0 +1,66 @@
+@import '_varaibles'
+@import '_portfolio-item'
+
+.portfolio
+  &__item-container
+    position: relative
+    max-width: 1170px
+    margin: 40px auto
+    
+    ul
+      display: flex
+      flex-wrap: wrap
+      justify-content: flex-start
+      align-items: flex-start
+      list-style-type: none
+      padding: 0
+      margin: 0
+      margin-right: -30px
+      margin-bottom: -25px
+      
+      li
+        flex-shrink: 0
+        margin-right: 30px
+        margin-bottom: 25px
+        
+@media (max-width: 1230px)
+  .portfolio
+    &__item-container
+      
+      ul
+        margin-right: -25px
+        margin-bottom: -20px
+        
+        li
+          margin-right: 25px
+          margin-bottom: 20px
+          
+@media (min-width: 781px) and (max-width: 1230px)
+  .portfolio
+    &__item-container
+      max-width: 725px
+          
+@media (min-width: 541px) and (max-width: 780px)
+  .portfolio
+    &__item-container
+      max-width: 475px
+          
+@media (max-width: 768px)
+  .portfolio
+    &__item-container
+      margin-top: 20px
+      padding-bottom: 35px
+      
+@media (max-width: 540px)
+  .portfolio
+    &__item-container
+      ul
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        margin-right: 0
+        margin-bottom: -30px
+        
+        li
+          margin-right: 0
+          margin-bottom: 30px

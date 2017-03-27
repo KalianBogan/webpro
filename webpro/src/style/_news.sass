@@ -1,0 +1,24 @@
+@import '_varaibles'
+@import '_news-block.sass';
+@import '_news-selection.sass';
+
+.news
+  max-width: 1170px
+  padding-top: 30px
+  margin: auto
+  
+@media (max-width: 1230px)
+  .news
+    max-width: none
+    padding-left: 30px
+    padding-right: 30px
+    
+@media (max-width: 730px)
+  .news
+    padding-left: 25px
+    padding-right: 25px
+    padding-bottom: 0
+    
+@media (max-width: 640px)
+  .news
+    overflow: hidden

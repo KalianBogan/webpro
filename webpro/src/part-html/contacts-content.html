@@ -1,0 +1,150 @@
+<div class="contacts content-indent">
+ 
+  <div class="case-container">
+    <h3 class="page-title">Наши контакты</h3>
+    <p class="page-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in egestas lectus. Etiam tempor odio tellus, at bibendum neque faucibus quis. Sed vel facilisis elit. Nullam fringilla pharetra diam non accumsan. Morbi eget aliquam mauris. Etiam vehicula efficitur mi.</p>
+    <div class="contacts__body">
+      <div class="contacts__left">
+        <div class="contacts__contacts">
+          <ul class="contacts__contacts-list">
+            <li class="contacts__contacts-item">
+              <span class="contacts__contacts-icon contacts__contacts-icon--skype"><i class="fa fa-skype" aria-hidden="true"></i></span>
+              <span class="contacts__contacts-text">webpro.su</span>
+            </li>
+            <li class="contacts__contacts-item">
+              <span class="contacts__contacts-icon contacts__contacts-icon--email"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+              <span class="contacts__contacts-text">info@webpro.su</span>
+            </li>
+            <li class="contacts__contacts-item">
+              <span class="contacts__contacts-icon contacts__contacts-icon--phone"><i class="fa fa-phone" aria-hidden="true"></i></span>
+              <span class="contacts__contacts-text">
+                <span class="contacts__contacts-text-row">8 (495) 122 122</span>
+                <span class="contacts__contacts-text-row">8 (4212) 944 320</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__requisites">
+         <table>
+           <thead>
+             <tr>
+               <th colspan="2">Наши реквизиты</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td class="contacts__requisites-item-title">ИП</td>
+               <td class="contacts__requisites-item-body">Божко Алексей Евгеньевич</td>
+             </tr>
+             <tr>
+               <td class="contacts__requisites-item-title">Адрес:</td>
+               <td class="contacts__requisites-item-body">680000, г. Хабаровск, ул. Льва Толстого 22, оф 217б</td>
+             </tr>
+             <tr>
+               <td class="contacts__requisites-item-title">ИНН:</td>
+               <td class="contacts__requisites-item-body">280602866266</td>
+             </tr>
+             <tr>
+               <td class="contacts__requisites-item-title">ОГРН:</td>
+               <td class="contacts__requisites-item-body">314281317600012</td>
+             </tr>
+             <tr>
+               <td class="contacts__requisites-item-title">Р/с:</td>
+               <td class="contacts__requisites-item-body">40802810920000000477</td>
+             </tr>
+             <tr>
+               <td class="contacts__requisites-item-title">БИК:</td>
+               <td class="contacts__requisites-item-body">040813770</td>
+             </tr>
+             <tr>
+               <td class="contacts__requisites-item-title">К/с:</td>
+               <td class="contacts__requisites-item-body">30101810800000000770</td>
+             </tr>
+             <tr>
+               <td class="contacts__requisites-item-title">Банк:</td>
+               <td class="contacts__requisites-item-body">ФИЛИАЛ "ХАБАРОВСКИЙ" ОАО "АЛЬФА-БАНК"</td>
+             </tr>
+           </tbody>
+         </table>
+        </div>
+      </div>
+      <div class="contacts__right">
+        <div class="contacts__form">
+          <div class="contacts__form-title">Задать вопрос</div>
+          <form class="form-default" action="">
+            <div class="contacts__form-dbl-input">
+              <div class="form-default__input-wrp input-valid">
+                <input class="form-default__input js-focus" type="text" placeholder="Имя" required>
+                <span class="form-default__error-icon-wrap"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+              </div>
+              <div class="form-default__input-wrp input-not-valid">
+                <input class="form-default__input js-focus" type="email" placeholder="Email" required>
+                <span class="form-default__error-icon-wrap"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <textarea class="form-default__textarea js-focus" placeholder="Ваш вопрос"></textarea>
+            <div class="contacts__form-foo-block">
+              <label for="loadFile">
+                <i class="fa fa-paperclip" aria-hidden="true"></i>
+                <span>Прикрепить файл</span>
+                <input id="loadFile" type="file">
+                <span class="fileName">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  <span></span>
+                </span>
+              </label>
+              <select class="contacts__select form-control">
+                <option selected>Выберете тип проекта</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <input class="btn btn--type-1 btn--size-l" type="submit">
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container-fluid map-block">
+  <div class="row">
+    <div id="map"></div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var map,
+      styleArray = [];
+  
+  function initMap() {
+
+    var myLatLng = {lat: 48.488036, lng: 135.069082};
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: myLatLng,
+      zoom: 17,
+      disableDefaultUI: true
+    });
+
+    var image = 'img/map-marker.png',
+        marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          icon: image
+        });
+
+    var styleArray = [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"lightness":20},{"color":"#ececec"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"on"},{"color":"#f0f0ef"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#f0f0ef"}]},{"featureType":"landscape.man_made","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#d4d4d4"}]},{"featureType":"landscape.natural","elementType":"all","stylers":[{"visibility":"on"},{"color":"#ececec"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"lightness":21},{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#d4d4d4"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#303030"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"saturation":"-100"}]},{"featureType":"poi.attraction","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.government","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.medical","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.park","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"featureType":"poi.place_of_worship","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.school","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.school","elementType":"geometry.stroke","stylers":[{"lightness":"-61"},{"gamma":"0.00"},{"visibility":"off"}]},{"featureType":"poi.sports_complex","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#dadada"},{"lightness":17}]}];
+
+    map.setOptions({styles: styleArray});
+  }
+
+</script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGOTYnmleDdDCsVkdj6VjfZVcGj9Kcra8&callback=initMap">
+</script>

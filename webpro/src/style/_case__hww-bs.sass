@@ -1,0 +1,38 @@
+.hww-bs
+  padding-bottom: 75px
+  background: #fff
+  
+  &__item
+    text-align: center
+    font-weight: 300
+    
+  &__item-img
+    margin-bottom: 20px
+    
+  &__item-title
+    margin-bottom: 23px
+    color: #2c2c2c
+    font-size: 26px
+    
+  &__item-body
+    color: #a3a3a3
+    
+@media (max-width: 1200px)
+  .hww-bs
+    padding-bottom: 20px
+    
+    &__item
+      margin-bottom: 30px
+      
+@media (max-width: 768px)
+  .hww-bs
+    padding-bottom: 10px
+    
+    &__item
+      &:nth-child(odd)
+        clear: both
+  
+@media (max-width: 530px)
+  .hww-bs
+    &__item
+      width: 100% !important

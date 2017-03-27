@@ -1,0 +1,58 @@
+.functional
+  padding-bottom: 70px
+  background: #ececec
+    
+  &__list
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    padding: 0
+    margin: 0
+    list-style-type: none
+    
+  &__item
+    width: 300px
+    
+  &__img
+    max-width: 210px
+    height: auto
+    
+  .case__subtitle
+    margin-bottom: 30px
+    
+@media(max-width: 1100px)
+  .functional
+    padding-bottom: 0
+    
+    &__body
+      max-width: 75%
+      margin: auto
+    
+    &__list
+      flex-wrap: wrap
+      
+    &__item
+      width: 50%
+      margin-bottom: 40px
+      text-align: center
+      
+    &__img
+      display: inline-block
+      
+@media(max-width: 800px)
+  .functional
+    &__body
+      max-width: none
+      
+@media(max-width: 650px)
+  .functional
+    padding-bottom: 40px
+    
+    &__list
+      display: block
+      
+    &__item
+      width: 100%
+      
+      &:last-child
+        margin-bottom: 0

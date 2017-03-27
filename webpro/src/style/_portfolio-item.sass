@@ -1,0 +1,95 @@
+@import '_varaibles'
+
+.portfolio-item
+  display: block
+  width: 270px
+  
+  &__view,
+  &__view-conteiner,
+  &__img,
+  &__hidden-wrap,
+  &__title,
+  &__name
+    display: block
+  
+  &__view
+    padding: 5px
+    border-radius: 2px
+    background: #fff
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.29)
+    transition: box-shadow $tr_time_min
+    text-decoration: none
+        
+    &:hover
+      box-shadow: 0 14px 26px 0 rgba(0,0,0,.45)
+      text-decoration: none
+      
+      .portfolio-item
+        &__img,
+        &__hidden-wrap
+          margin-top: -32px
+    
+  &__view-conteiner
+    height: 260px
+    width: 100%
+    overflow: hidden
+    
+  &__img
+    width: 100%
+    height: 100%
+    transition: margin-top $tr_time_min
+    z-index: 1
+
+    img
+      display: block
+      width: 100%
+      height: 100%
+      
+  &__hidden-wrap
+    position: relative
+    padding-top: 10px
+    padding-left: 15px
+    padding-right: 15px
+    background: #fff
+    transition: margin-top $tr_time_min
+    z-index: 2
+    
+  &__title
+    display: flex
+    align-items: center
+    height: 50px
+    color: $color-2c
+    font-weight: 500
+    font-size: 13px
+    text-transform: uppercase
+    overflow: hidden
+      
+  &__name
+    max-width: 160px
+    height: 40px
+    margin-top: 20px
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    color: $color_body_txt
+    font-weight: 400
+    font-size: 14px
+    
+@media (max-width: 1230px)
+  .portfolio-item
+    width: 225px
+      
+    &__view
+      &:hover
+        .portfolio-item
+          &__img,
+          &__hidden-wrap
+            margin-top: -25px
+    
+    &__view-conteiner
+      height: 225px
+      
+    &__title
+      max-height: 36px
+      margin-bottom: 4px
+      line-height: 18px

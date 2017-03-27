@@ -1,0 +1,41 @@
+@import '_varaibles'
+
+.search-from
+  padding-bottom: 70px
+  
+  .case
+    &__title-text
+      color: #fff
+      font-weight: 500
+      
+    &__subtitle
+      color: #fff
+      
+  &__filter-img
+    display: block
+    max-width: 100%
+    height: auto
+    margin: auto
+    
+    &--table,
+    &--mob
+      display: none
+    
+    
+@media (max-width: 1230px)
+  .search-from
+    &__filter-img
+      &--desktop
+        display: none
+        
+      &--table
+        display: block
+        
+@media (max-width: 790px)
+  .search-from
+    &__filter-img
+      &--table
+        display: none
+        
+      &--mob
+        display: block

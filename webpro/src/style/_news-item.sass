@@ -1,0 +1,31 @@
+@import '_varaibles'
+
+.blog-item--news-selection
+  .blog-item
+    &__preview
+      margin-bottom: 0
+      
+    &__footer
+      flex-wrap: wrap
+      
+      .btn
+        margin-top: 15px
+      
+    &__tags-wrap
+      display: inline-block
+      margin-right: 10px
+      margin-top: 15px
+      
+  .btn-date
+    right: 0
+      
+@media (max-width: 640px)
+  .blog-item--news-selection
+    padding: 0 !important
+    background: none !important
+    box-shadow: none !important
+    
+    .blog-item
+      &__body
+        padding-left: 0
+        padding-right: 0
