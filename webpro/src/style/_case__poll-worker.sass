@@ -1,0 +1,142 @@
+.case
+  
+  &-footer
+    padding-top: 60px
+    
+  &--poll-worker
+    
+    .collection-of-information, .card-of-the-applicant
+      background: #ececec
+
+      .case
+
+        &__title
+          padding-top: 40px
+          text-align: left
+          
+        &__title-text
+          font-weight: 300
+
+      .designe
+
+        &__body
+          justify-content: center
+          
+        &__preview
+          margin-top: 50px
+          margin-right: 0
+
+        &__preview-img
+          box-shadow: 0 2px 15px rgba(0,0,0,0.1)
+            
+        &__info
+          margin-right: 0
+          margin-left: 60px
+          max-width: 730px
+
+        &__info-text
+          color: #aeaeae
+
+    .сreating-unique-profiles
+      background: #3d5266
+
+      .case
+
+        &__title-text
+          color: white
+          text-align: left
+          font-weight: 300
+
+      .designe
+
+        &__info
+          max-width: 750px
+          margin: 40px 100px 100px 0
+
+        &__preview
+          margin: auto 0 0 0
+
+    .convenient-reporting-of-job-seekers
+      background: #fff
+      
+      .case
+        
+        &__title-text
+          font-weight: 300
+          
+      .designe
+      
+        &__body
+          flex-direction: column
+          
+        &__info
+          max-width: 1170px
+          margin-bottom: 40px
+            
+        &__info-text
+          color: #a3a3a3
+          
+        &__preview
+          display: flex
+          margin-bottom: 70px
+          
+        &__preview-img
+          box-shadow: 0 2px 15px rgba(0,0,0,0.1)
+          
+        &__preview-img:nth-child(2)
+          margin-left: 30px
+        
+@media (max-width: 1250px)
+  .case--poll-worker
+    .dynamic-content
+      .designe
+        &__preview
+          margin-right: 0
+          
+        &__preview-img:nth-child(2)
+          margin: 0 15px
+      
+@media (max-width: 1250px)
+  .case--poll-worker
+    .dynamic-content
+      .designe
+        &__preview
+          margin: 0
+          
+@media (max-width: 1200px)
+  .case--poll-worker
+    .collection-of-information, .сreating-unique-profiles, .convenient-reporting-of-job-seekers, .card-of-the-applicant
+      .designe
+        
+        &__body
+          display: flex
+          flex-direction: column
+          align-items: center
+          padding-top: 60px
+          padding-bottom: 60px
+          
+        &__preview
+          margin: 0
+          order: 2
+          
+        &__info
+          margin: 0
+          margin-bottom: 30px
+          order: 1
+
+      .case
+        
+        &__title-text
+          text-align: center
+
+    .convenient-reporting-of-job-seekers
+      
+      .designe
+        
+        &__preview
+          flex-direction: column
+          align-items: center    
+
+        &__preview-img:nth-child(2)
+          margin-left: 0
+          margin-top: 20px

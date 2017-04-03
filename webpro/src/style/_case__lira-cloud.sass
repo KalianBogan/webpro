@@ -1,0 +1,168 @@
+.case
+  
+  &-footer
+    padding-top: 80px
+    background: #ececec
+    
+  &--lira-cloud
+    
+    .call-tracking
+      background: #ececec
+
+      .case
+
+        &__title
+          padding-top: 40px
+          text-align: left
+          
+        &__title-text
+          font-weight: 300
+
+      .designe
+
+        &__preview
+          margin-top: 70px
+          margin-right: 0
+
+        &__preview-img
+          box-shadow: 0 2px 15px rgba(0,0,0,0.1)
+            
+        &__info
+          margin-right: 0
+          margin-left: 60px
+          max-width: 730px
+
+        &__info-text
+          color: #aeaeae
+
+    .embed
+      background: #389bee
+
+      .case
+
+        &__title-text
+          color: white
+          text-align: left
+          font-weight: 300
+
+      .designe
+
+        &__info
+          max-width: 750px
+          margin-right: 100px
+          margin-bottom: 75px
+
+        &__preview
+          margin: auto
+
+    .integration
+      background: #fff
+
+      .case
+        
+        &__title-text
+          text-align: left
+          font-weight: 300
+          
+      .designe
+          
+        &__preview
+          margin-top: 70px
+          margin-right: 0
+          
+
+
+
+        &__info
+          margin: 70px 60px
+          margin-right: 0
+          max-width: 760px
+
+        &__info-text
+          color: #a3a3a3
+
+    .dynamic-content
+      background: #ececec
+      
+      .case
+        
+        &__title-text
+          font-weight: 300
+          
+      .designe
+      
+        &__body
+          flex-direction: column
+          
+        &__info
+          max-width: 1170px
+          margin-bottom: 40px
+            
+        &__info-text
+          color: #a3a3a3
+          
+        &__preview
+          display: flex
+          
+        &__preview-img
+          box-shadow: 0 2px 15px rgba(0,0,0,0.1)
+          
+        &__preview-img:nth-child(2)
+          margin: 0 30px
+        
+@media (max-width: 1250px)
+  .case--lira-cloud
+    .dynamic-content
+      .designe
+        &__preview
+          margin-right: 0
+          
+        &__preview-img:nth-child(2)
+          margin: 0 15px
+      
+@media (max-width: 1250px)
+  .case--lira-cloud
+    .dynamic-content
+      .designe
+        &__preview
+          margin: 0
+          
+@media (max-width: 1200px)
+  .case--lira-cloud
+    .call-tracking, .embed, .integration, .dynamic-content
+      .designe
+        
+        &__body
+          display: flex
+          flex-direction: column
+          align-items: center
+          padding-top: 60px
+          padding-bottom: 60px
+          
+        &__preview
+          margin: 0
+          order: 2
+          
+        &__info
+          margin: 0
+          margin-bottom: 30px
+          order: 1
+
+      .case
+        
+        &__title-text
+          text-align: center
+
+    .dynamic-content
+      
+      .designe
+        
+        &__info
+          max-width: 750px
+        
+        &__preview
+          flex-direction: column
+          align-items: center    
+  
+        &__preview-img:nth-child(2)
+          margin: 20px 0
