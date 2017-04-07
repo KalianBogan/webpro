@@ -6239,6 +6239,9 @@ h6 {
   background: -webkit-linear-gradient(right, #2976b7, #389cf0);
   background: linear-gradient(to left, #2976b7, #389cf0); }
 
+.case--complextech .case-intro {
+  background-image: url(../img/case/complextech/intro.jpg); }
+
 .case--craft-cafe .case-intro {
   background-image: url(../img/case/craft-cafe/intro.jpg); }
 
@@ -7437,7 +7440,7 @@ h6 {
   .jew-footer .case-container {
     position: relative; }
   .jew-footer .case-footer {
-    background: none; }
+    background: #ececec; }
 
 @media (min-width: 801px) and (max-width: 1030px) {
   .jew-footer__text {
@@ -7828,3 +7831,151 @@ h6 {
 
 .case--rosttur .dignity--with-title .case__subtitle, .case--rosttur .ios-window-block .case__subtitle {
   max-width: 770px; }
+
+@media (max-width: 700px) {
+  .case--expert .preview .case__title {
+    max-width: 220px;
+    margin: 0 auto 25px auto; } }
+
+.case--personal-travel .case-footer {
+  background: #fff; }
+
+.case--jew .dignity {
+  background: #ececec; }
+
+.case--jew .preview {
+  background: #fff; }
+
+.case--aggregator .index-page {
+  background: #ececec; }
+
+.case--aggregator .speed {
+  background: #fff; }
+
+.case--aggregator .modularity {
+  background: #ececec; }
+
+.case--aggregator .speed .case__title, .case--aggregator .modularity .case__title {
+  padding-top: 0;
+  text-align: left; }
+
+.case--aggregator .speed .designe__body, .case--aggregator .modularity .designe__body {
+  padding: 60px 0; }
+
+.case--aggregator .speed .designe__preview, .case--aggregator .modularity .designe__preview {
+  margin: auto; }
+
+.case--aggregator .speed .designe__info, .case--aggregator .modularity .designe__info {
+  margin-right: 0;
+  margin-left: 90px;
+  max-width: 630px; }
+
+.case--aggregator .speed .designe__info-text, .case--aggregator .modularity .designe__info-text {
+  color: #aeaeae; }
+
+.case--aggregator .case-footer {
+  background: #fff; }
+
+@media (max-width: 1200px) {
+  .case--lira-cloud .speed .designe__body, .case--lira-cloud .modularity .designe__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px; }
+  .case--lira-cloud .speed .designe__preview, .case--lira-cloud .modularity .designe__preview {
+    margin: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .case--lira-cloud .speed .designe__info, .case--lira-cloud .modularity .designe__info {
+    margin: 0;
+    margin-bottom: 30px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  .case--lira-cloud .speed .case__title-text, .case--lira-cloud .modularity .case__title-text {
+    text-align: center; } }
+
+.case--complextech .dignity {
+  background: #ececec; }
+
+.case--complextech .catalog, .case--complextech .review {
+  background: #ececec; }
+  .case--complextech .catalog .case__title, .case--complextech .review .case__title {
+    padding-top: 40px;
+    text-align: left; }
+  .case--complextech .catalog .case__title-text, .case--complextech .review .case__title-text {
+    font-weight: 300; }
+  .case--complextech .catalog .designe__body, .case--complextech .review .designe__body {
+    padding: 70px 0; }
+  .case--complextech .catalog .designe__preview, .case--complextech .review .designe__preview {
+    margin-right: 0; }
+  .case--complextech .catalog .designe__preview-img, .case--complextech .review .designe__preview-img {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); }
+  .case--complextech .catalog .designe__info, .case--complextech .review .designe__info {
+    margin-right: 0;
+    margin-left: 60px;
+    max-width: 730px; }
+  .case--complextech .catalog .designe__info-text, .case--complextech .review .designe__info-text {
+    color: #aeaeae; }
+
+.case--complextech .pdf-generation {
+  background: #fff; }
+  .case--complextech .pdf-generation .case__title-text {
+    max-width: 500px;
+    text-align: left;
+    font-weight: 300; }
+  .case--complextech .pdf-generation .designe__body {
+    padding: 55px 0; }
+  .case--complextech .pdf-generation .designe__preview {
+    margin-right: 0; }
+  .case--complextech .pdf-generation .designe__info {
+    margin: auto;
+    max-width: 760px; }
+  .case--complextech .pdf-generation .designe__info-text {
+    color: #a3a3a3; }
+  .case--complextech .pdf-generation .designe__info-text {
+    color: #b1b1b1; }
+
+.case--complextech .preview {
+  background: #fff; }
+
+.case--complextech .case-footer {
+  background: #fff; }
+
+@media (max-width: 1200px) {
+  .case--complextech .catalog .designe__body, .case--complextech .pdf-generation .designe__body, .case--complextech .review .designe__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px; }
+  .case--complextech .catalog .designe__preview, .case--complextech .pdf-generation .designe__preview, .case--complextech .review .designe__preview {
+    margin: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .case--complextech .catalog .designe__info, .case--complextech .pdf-generation .designe__info, .case--complextech .review .designe__info {
+    margin: 0;
+    margin-bottom: 30px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  .case--complextech .catalog .case__title-text, .case--complextech .pdf-generation .case__title-text, .case--complextech .review .case__title-text {
+    margin: auto;
+    text-align: center; } }
