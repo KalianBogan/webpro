@@ -148,10 +148,6 @@ header {
       color: #30a5d6;
       text-decoration: none; }
 
-.anchor:hover {
-  color: #2c2c2c;
-  text-decoration: none; }
-
 .h-nav {
   position: relative;
   border-top: 1px solid #eaeaea;
@@ -7879,10 +7875,6 @@ h6 {
 
 .case--aggregator .case-footer {
   background: #fff; }
-
-.aggregator--dignity__item-title-text {
-  max-width: 250px;
-  margin: auto; }
 
 @media (max-width: 1200px) {
   .case--lira-cloud .speed .designe__body, .case--lira-cloud .modularity .designe__body {

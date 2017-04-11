@@ -23,5 +23,3 @@
 
 
 //= part-js/case-scrollbar.js
-
-//= part-js/anchorScroller.js
