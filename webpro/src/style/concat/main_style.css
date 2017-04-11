@@ -3897,6 +3897,9 @@ h5 {
 h6 {
   font-size: 16px; }
 
+.anchor-link:hover, .anchor-link:active, .anchor-link:focus {
+  text-decoration: none; }
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
