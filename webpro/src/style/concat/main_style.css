@@ -4319,7 +4319,7 @@ h6 {
       white-space: nowrap; }
       .header-nav ul li.select a:after {
         height: 3px;
-        margin-top: 24px; }
+        margin-top: 23px; }
       .header-nav ul li a {
         position: relative;
         padding: 5px 0;
@@ -4345,7 +4345,7 @@ h6 {
           text-decoration: none; }
           .header-nav ul li a:hover:after {
             height: 3px;
-            margin-top: 24px; }
+            margin-top: 23px; }
 
 .mob-nav-wrapper {
   display: none;
@@ -6854,8 +6854,7 @@ h6 {
   .index-page__mac-window-img {
     display: block;
     width: 100%;
-    height: auto;
-    margin-bottom: -680px; }
+    height: auto; }
   .index-page__mob-preview {
     display: none;
     margin-bottom: 50px; }
