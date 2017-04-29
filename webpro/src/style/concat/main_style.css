@@ -6177,6 +6177,13 @@ h6 {
     font-size: 18px;
     line-height: 24px; }
 
+.case-intro__title {
+  margin-right: 20px; }
+
+@media (min-width: 1030px) {
+  .case-intro__title h1 {
+    margin: 0; } }
+
 @media (max-width: 1000px) {
   .case__title {
     padding-top: 45px;
@@ -6532,10 +6539,16 @@ h6 {
   .dignity__item-title {
     margin-bottom: 10px; }
   .dignity__item-title-pic {
-    display: inline-block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 42px;
     margin-bottom: 10px; }
   .dignity__item-title-img {
-    height: 42px;
+    max-height: 42px;
     width: auto;
     max-width: 100%; }
   .dignity__item-title-text {
@@ -7300,7 +7313,17 @@ h6 {
     text-align: center;
     font-weight: 300; }
   .hww-bs__item-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 41px;
     margin-bottom: 20px; }
+    .hww-bs__item-img img {
+      width: auto;
+      max-height: 41px; }
   .hww-bs__item-title {
     margin-bottom: 23px;
     color: #2c2c2c;
@@ -7443,6 +7466,7 @@ h6 {
   .jew-footer .case-container {
     position: relative; }
   .jew-footer .case-footer {
+    padding-bottom: 60px;
     background: #ececec; }
 
 @media (min-width: 801px) and (max-width: 1030px) {
